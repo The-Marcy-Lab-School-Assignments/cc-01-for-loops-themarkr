@@ -1,21 +1,49 @@
 //1
 function countToFifty(){
-  
+  for(let i =1; i<=50; i++){
+      console.log(i);
+  }
 }
 
 //2
-function countFromOne(){
-  
+function countFromOne(num){
+   for(let i = 1; i <=num; i++){
+       console.log(i);
+   }
 }
+  
+
 
 //3
 function threeAndFiveInFifty(){
-  
+  for(let i=1; i<=50;i++){
+      if(i%3 === 0 || i%5 === 0){
+          console.log(i);
+      }
+  }
 }
 
 //4
-function threeAndFive(){
-  
+function threeAndFive(num){
+    for(let i=1; i<=num;i++){
+      if(i%3 === 0 || i%5 === 0){
+          console.log(i);
+      }
+  }
+}
+
+function triple(array){
+   let tripleArray = [];
+    for(let i = 0; i<array.length;i++){
+        tripleArray.push(array[i]*3);
+    }
+return tripleArray;
 }
 
 
+//untToFifty();
+//untFromOne(7);
+threeAndFiveInFifty();
+threeAndFive(10); //3 5 6 9 10
+triple([1, 2, 3]);
+console.log(triple([1, 2, 3]));
